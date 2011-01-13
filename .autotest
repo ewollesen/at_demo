@@ -1,0 +1,7 @@
+Autotest.add_hook :initialize do |at|
+  at.unit_diff = 'unit_diff'
+  at.find_directories = ['lib', 'spec']
+  at.sleep = 2
+end
+
+require "autotest/inotify"
